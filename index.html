@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+  <title> AnimePahe </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    background: white;
+    color: black;
+    font-family: sans-serif;
+  }
+  .header{
+    top: 0px;
+    background: darkred;
+    color: white;
+    width:96%;
+    padding: 10px;
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  .pahe{
+    float:left;
+    padding-left: 30%;
+    font-size: 30px;
+    font-weight: bold;
+    color: gold;
+  }
+  
+  .downbtn{
+    float:right;
+    font-size: 30px;
+    border:none;
+    background: none;
+    color:white;
+  }
+  
+  .show{
+    height: 220px;
+    overflow: show;
+  }
+  
+  .space{
+    border: none;
+    height:40px;
+  }
+  
+  .menu a{
+    display: block;
+    text-decoration:none;
+    color: white;
+    font-size: 17px;
+  }
+  
+  #search{
+    border: none;
+    border-radius:0px;
+    height:20px;
+    width: 70%;
+    color: white;
+    background: none;
+    border-bottom: 1px solid grey;
+  }
+  #search:hover{
+    outline: none;
+    border-bottom: 2px solid white;
+  }
+  
+  .animes{
+    display: sticky;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .animehh{
+    height: 250px;
+    width: 99%;
+    position: relative;
+    margin-bottom:5px;
+    transition: 0.5s ease;
+  }
+  .animehh:hover{
+    height: 255px;
+    width: 100%;
+  }
+  .aone{background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('img15.jpg');}
+  .atwo{background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('img16.jpg');}
+  .athree{background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('img14.jpg');}
+  .afour{background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('img13.jpg');}
+  
+  .atitle{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    bottom: 5px;
+    right: 10px;
+  }
+  
+</style>
+</head>
+<body>
+  <div class='header' id='head'>
+    <span class='pahe'>
+      Animepahe
+    </span>
+    <button class='downbtn' id='btn'>
+      &#9776
+    </button>
+    <div class='space'></div>
+    <br>
+    <div class='menu'> 
+    <a href=""> List </a>
+    <a href=""> Menu </a>
+    <a href=""> Genre </a>
+    <a href=""> Anime </a>
+    </div>
+    <div class='space'></div>
+    <label for='search' class='Search'> Search For Anime: </label>
+    <input id='search' placeholder="Search...">
+  </div>
+  
+  <h2> Anime For You</h2>
+  
+  <div class='animes'>
+  <div class='animehh aone'>
+    <span class='atitle'>
+      Mieruko-chan
+    </span>
+  </div>
+  
+  <div class='animes'> </div>
+  <div class='animehh atwo'>
+    <span class='atitle'>
+      Vegas Hunt
+    </span>
+  </div>
+  
+  <div class='animes'> </div>
+  <div class='animehh athree'>
+    <span class='atitle'>
+      The search 
+    </span>
+  </div>
+  
+  <div class='animes'> </div>
+  <div class='animehh afour'>
+    <span class='atitle'>
+      Shibuya Boys
+    </span>
+  </div>
+  
+  </div>
+</body>
+</html>
+<script>
+document.getElementById('btn').onclick = function(){document.getElementById('head').classList.toggle('show');
+};
+</script>
