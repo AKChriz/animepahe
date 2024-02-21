@@ -11,20 +11,22 @@
   }
   .header{
     top: 0px;
-    background: darkred;
+    background: black;
     color: white;
     width:96%;
     padding: 10px;
     height: 30px;
     overflow: hidden;
   }
-  
+  h2{
+    font-weight: normal;
+  }
   .pahe{
     float:left;
-    padding-left: 30%;
+    padding-left: %;
     font-size: 30px;
     font-weight: bold;
-    color: gold;
+    color: magenta;
   }
   
   .downbtn{
@@ -47,19 +49,25 @@
   
   .menu a{
     display: block;
+    line-height: 1.5;
     text-decoration:none;
     color: white;
     font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .menu a:focus{
+    background: magenta;
   }
   
   #search{
     border: none;
-    border-radius:0px;
-    height:20px;
-    width: 60%;
-    color: white;
-    background: none;
-    border-bottom: 1px solid grey;
+    border-radius: 4px;
+    height:30px;
+    width: 98%;
+    color: black;
+    background: white;
+    padding-left: 10px;
   }
   #search:hover{
     outline: none;
@@ -99,6 +107,17 @@
     text-decoration: 1px solid white underline;
   }
   
+  .aepisode{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    bottom: 5px;
+    left: 10px;
+  }
+  .aepisode:hover{
+    text-decoration: 1px solid white underline;
+  }
+  
   .btn{
     border: none;
     height: 40px;
@@ -130,36 +149,36 @@
     <a href=""> Genre </a>
     <a href=""> Anime </a>
     </div>
-    <div class='space'></div>
-    <label for='search' class='Search'> Search For Anime: </label>
+    <dv class='space'></di>
     <input id='search' placeholder="Search...">
   </div>
   
-  <h2> Anime For You</h2>
+  <h2> Latest Releases </h2>
   
   <div class='animes'>
   <div class='animehh aone'>
+    <span class='aepisode' id=''> 16 </span>
     <span class='atitle'>
       Mieruko-chan
     </span>
   </div>
   
-  <div class='animes'> </div>
   <div class='animehh atwo'>
+    <span class='aepisode' id=''> 8 </span>
     <span class='atitle'>
       Vegas Hunt
     </span>
   </div>
   
-  <div class='animes'> </div>
   <div class='animehh athree'>
+    <span class='aepisode' id=''> 12 </span>
     <span class='atitle'>
       The search 
     </span>
   </div>
   
-  <div class='animes'> </div>
   <div class='animehh afour'>
+    <span class='aepisode' id=''> 11 </span>
     <span class='atitle'>
       Shibuya Boys
     </span>
